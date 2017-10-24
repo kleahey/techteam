@@ -5,7 +5,7 @@ require 'pp'
 require 'time'
 require 'logger'
 
-# Note: change this to obtain your chart data from some external source
+# Velocity Chart
 labels = ['TT - Sprint 1', 'TT - Sprint 2', 'TT - Sprint 3', 'TT - Sprint 4']
 data = [
   {
@@ -25,6 +25,28 @@ data = [
 options = { }
 
 send_event('ttBarchart', { labels: labels, datasets: data, options: options })
+
+# Burndown Chart
+labels = ['6-Oct', '7-Oct', '8-Oct', '9-Oct', '10-Oct', '11-Oct']
+
+
+  data = [
+    {
+      label: "Time Remaining",
+      steppedLine: true,
+      data: [48.2, 39, 26.4, 20.9, 13.7, 2.4],
+      borderColor: [ 'rgba(255, 99, 132, 1)' ] * labels.length,
+      borderWidth: 3,
+    }, {
+      label: "Time Spent",
+      steppedLine: true,
+      data: [0, 9.9, 21.8, 27.3, 34.5, 45.8],
+      borderColor: [ 'rgba(0, 255, 0, 1)' ] * labels.length,
+      borderWidth: 3,
+    }
+  ]
+
+  send_event('ttBurndown', { labels: labels, datasets: data })
 
 =begin
 class MyLog

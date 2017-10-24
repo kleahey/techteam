@@ -1,8 +1,8 @@
 <script type='text/javascript'>
 $(function() {
   // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
-  Dashing.widget_base_dimensions = [415, 360]
-  Dashing.numColumns = 6
+  Dashing.widget_base_dimensions = [495, 500]
+  Dashing.numColumns = 4
 });
 </script>
 
@@ -15,11 +15,30 @@ $(function() {
 
 <div class="gridster">
   <div class="text-center">
-    <h2 style="font-family:'Roboto';">Team Squared</h2>
+    <div style="font-family:'Roboto';">Team Squared</div>
   </div>
   <ul>
-    <li data-row="1" data-col="1" data-sizex="4" data-sizey="2">
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
       <div data-id="ttBarchart" data-view ="BarChart" data-title="Velocity Report" data-moreinfo=""></div>
+    </li>
+    <li data-row="2" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="ttBurndown" data-view ="LineChart" data-title="Sprint 4 Burndown" data-moreinfo=""></div>
+    </li>
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="daysLeft" style="background-color: #0084b4;font-family:'Roboto';" data-view="Number" data-title="Days Left in Sprint"></div>
+      <i class="fa fa-ticket-o icon-background"></i>
+    </li>
+    <li data-row="1" data-col="4" data-sizex="1" data-sizey="1">
+      <div data-id="daysLeft" style="background-color: #0084b4;font-family:'Roboto'" data-view="Number" data-title="Days Left in Sprint"></div>
+      <i class="fa fa-ticket-o icon-background"></i>
+    </li>
+    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="daysLeft" style="background-color: #0084b4;font-family:'Roboto';" data-view="Number" data-title="Actual Hours Before Sprint Ends"></div>
+      <i class="fa fa-ticket-o icon-background"></i>
+    </li>
+    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="daysLeft" style="background-color: #0084b4;font-family:'Roboto';" data-view="Number" data-title="Remaining Sprint Capacity"></div>
+      <i class="fa fa-ticket-o icon-background"></i>
     </li>
   </ul>
 </div>
