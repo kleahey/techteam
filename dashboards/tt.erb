@@ -15,29 +15,24 @@ $(function() {
 
 <div class="gridster">
   <div class="text-center">
-    <div style="font-family:'Roboto';">Team Squared</div>
+    <div style="font-family:'Roboto';font-weight:200;font-size:64px;">Team Squared</div>
   </div>
   <ul>
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="ttSprintGoal" style="background-color: #0084b4;" data-view="Text" data-title="Sprint Goal" data-text="" data-moreinfo=""></div>
+    </li>
+    <li data-row="1" data-col="2" data-sizex="2" data-sizey="1">
       <div data-id="ttBarchart" data-view ="BarChart" data-title="Velocity Report" data-moreinfo=""></div>
     </li>
-    <li data-row="2" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="ttBurndown" data-view ="LineChart" data-title="Sprint 4 Burndown" data-moreinfo=""></div>
-    </li>
-    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
-      <div data-id="daysLeft" style="background-color: #0084b4;font-family:'Roboto';" data-view="Number" data-title="Days Left in Sprint"></div>
-      <i class="fa fa-ticket-o icon-background"></i>
+    <li data-row="2" data-col="2" data-sizex="2" data-sizey="1">
+      <div data-id="ttBurndown" data-view="JiraBurndown"></div>
     </li>
     <li data-row="1" data-col="4" data-sizex="1" data-sizey="1">
-      <div data-id="daysLeft" style="background-color: #0084b4;font-family:'Roboto'" data-view="Number" data-title="Days Left in Sprint"></div>
+      <div data-id="ttCapacity" style="background-color: #0084b4;font-family:'Roboto';" data-view="Number" data-title="Remaining Team Sprint Capacity" data-moreinfo="Hours"></div>
       <i class="fa fa-ticket-o icon-background"></i>
     </li>
-    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
-      <div data-id="daysLeft" style="background-color: #0084b4;font-family:'Roboto';" data-view="Number" data-title="Actual Hours Before Sprint Ends"></div>
-      <i class="fa fa-ticket-o icon-background"></i>
-    </li>
-    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
-      <div data-id="daysLeft" style="background-color: #0084b4;font-family:'Roboto';" data-view="Number" data-title="Remaining Sprint Capacity"></div>
+    <li data-row="2" data-col="4" data-sizex="1" data-sizey="1">
+      <div data-id="ttWorkload" style="background-color: #0084b4;font-family:'Roboto';" data-view="Number" data-title="Remaining Sprint Dev/QA Workload" data-moreinfo="Hours"></div>
       <i class="fa fa-ticket-o icon-background"></i>
     </li>
   </ul>

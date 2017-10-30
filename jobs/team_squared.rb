@@ -35,7 +35,7 @@ labels = ['6-Oct', '7-Oct', '8-Oct', '9-Oct', '10-Oct', '11-Oct']
       label: "Time Remaining",
       steppedLine: true,
       data: [48.2, 39, 26.4, 20.9, 13.7, 2.4],
-      borderColor: [ 'rgba(255, 99, 132, 1)' ] * labels.length,
+      borderColor: [ 'rgba(255, 0, 0, 1)' ] * labels.length,
       borderWidth: 3,
     }, {
       label: "Time Spent",

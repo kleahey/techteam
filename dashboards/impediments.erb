@@ -1,0 +1,31 @@
+<script type='text/javascript'>
+$(function() {
+  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+  Dashing.widget_base_dimensions = [495, 180]
+  Dashing.numColumns = 4
+});
+</script>
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+    google.load("visualization", "1", {packages:["corechart"]});
+</script>
+
+<% content_for :title do %>Products & Technology Team Dashboard<% end %>
+<div class="gridster">
+  <div style="font-family:'Roboto';font-size:64px;font-weight:100;">Impediments</div>
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="4" data-sizey="1">
+      <div data-id="impediment2" style="background-color:maroon;" data-view="Text" data-title="" data-text="SDS: Large files (+5GB) not copying to S3" data-moreinfo=""></div>
+    </li>
+    <li data-row="2" data-col="1" data-sizex="4" data-sizey="1">
+      <div data-id="impediment5" data-view="Text" data-title="" data-text="Recommender Profile Green Check Issue" data-moreinfo=""></div>
+    </li>
+    <li data-row="3" data-col="1" data-sizex="4" data-sizey="1">
+      <div data-id="impediment4" style="background-color:maroon;" data-view="Text" data-title="" data-text="Parchment, onTrack, and Member Status" data-moreinfo=""></div>
+    </li>
+    <li data-row="4" data-col="1" data-sizex="4" data-sizey="1">
+      <div data-id="impediment6" data-view="Text" data-title="" data-text="CashNet dropped pass & criss-cross apple sauce." data-moreinfo=""></div>
+    </li>
+  </ul>
+</div>
