@@ -13,7 +13,7 @@ else
     jira_url: "https://cawiki.atlassian.net",
     username:  "kleahey",
     password: "Planet@ry77",
-    numberOfSprintsToShow: 3,
+    numberOfSprintsToShow: 1,
     sprint_mapping: {
       'freshBurndown' => 28
     }
