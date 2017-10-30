@@ -1,0 +1,39 @@
+<script type='text/javascript'>
+$(function() {
+  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+  Dashing.widget_base_dimensions = [495, 500]
+  Dashing.numColumns = 4
+});
+</script>
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+    google.load("visualization", "1", {packages:["corechart"]});
+</script>
+
+<% content_for :title do %>Products & Technology Team Dashboard<% end %>
+
+<div class="gridster">
+  <div class="text-center">
+    <h2 style="font-family:'Roboto';font-weight:200;font-size:64px;">Team 3PG</h2>
+  </div>
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="tpgSprintGoal" style="background-color: #0084b4;" data-view="Text" data-title="Sprint Goal" data-text="" data-moreinfo=""></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="tpgBarchart" data-view ="BarChart" data-title="Velocity Report" data-moreinfo=""></div>
+    </li>
+    <li data-row="2" data-col="2" data-sizex="2" data-sizey="1">
+      <div data-id="tpgBurndown" data-view="JiraBurndown"></div>
+    </li>
+    <li data-row="1" data-col="4" data-sizex="1" data-sizey="1">
+      <div data-id="tpgCapacity" style="background-color: #0084b4;font-family:'Roboto';" data-view="Number" data-title="Remaining Team Sprint Capacity" data-moreinfo="Hours"></div>
+      <i class="fa fa-ticket-o icon-background"></i>
+    </li>
+    <li data-row="2" data-col="4" data-sizex="1" data-sizey="1">
+      <div data-id="tpgWorkload" style="background-color: #0084b4;font-family:'Roboto';" data-view="Number" data-title="Remaining Sprint Dev/QA Workload" data-moreinfo="Hours"></div>
+      <i class="fa fa-ticket-o icon-background"></i>
+    </li>
+  </ul>
+</div>

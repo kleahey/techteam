@@ -1,0 +1,42 @@
+// ----------------------------------------------------------------------------
+// Widget-jira-burndown styles
+// ----------------------------------------------------------------------------
+.widget-jira-burndown {
+
+  background-color: #303030;
+
+  position: relative;
+
+  svg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  .c3-line {
+    stroke-width: 3px;
+  }
+
+  .c3-axis-y path, .c3-axis-y text, .c3-axis-y line {
+    stroke: rgba(255, 255, 255, 0.8);
+  }
+
+  .graphContainer {
+    position: absolute !important;
+    left: 0px;
+    top: 0px;
+  }
+
+  .more-info {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  .updated-at {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+}
