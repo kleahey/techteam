@@ -106,6 +106,8 @@ GEM
       rack-test
       sinatra (~> 1.4.0)
       tilt (>= 1.3, < 3)
+    sinatra_cyclist (0.0.3)
+      sinatra
     sprockets (2.10.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -128,7 +130,7 @@ GEM
       memoizable (~> 0.4.2)
       naught (~> 1.1)
       simple_oauth (~> 0.3.1)
-    tzinfo (1.2.3)
+    tzinfo (1.2.4)
       thread_safe (~> 0.1)
     uber (0.1.0)
     unf (0.1.4)
@@ -143,6 +145,7 @@ DEPENDENCIES
   dotenv
   google-api-client
   httparty
+  sinatra_cyclist
   twitter (>= 5.9.0)
 
 BUNDLED WITH
