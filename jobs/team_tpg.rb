@@ -6,17 +6,17 @@ require 'time'
 require 'logger'
 
 # Note: change this to obtain your chart data from some external source
-labels = ['TPG - Sprint 1', 'TPG - Sprint 2', 'TPG - Sprint 3', 'TPG - Sprint 4']
+labels = ['TPG - Sprint 1', 'TPG - Sprint 2', 'TPG - Sprint 3', 'TPG - Sprint 4', 'TPG - Sprint 5']
 data = [
   {
     label: 'Committed Velocity',
-    data: [0, 29, 19, 19],
+    data: [0, 29, 19, 19, 20],
     backgroundColor: [ 'rgba(192, 192, 192, 0.2)' ] * labels.length,
     borderColor: [ 'rgba(192, 192, 192, 1)' ] * labels.length,
     borderWidth: 1,
   }, {
     label: 'Actual Velocity',
-    data: [0, 20, 15, ],
+    data: [0, 20, 15, 19],
     backgroundColor: [ 'rgba(0, 255, 0, 0.2)' ] * labels.length,
     borderColor: [ 'rgba(0, 255, 0, 1)' ] * labels.length,
     borderWidth: 1,

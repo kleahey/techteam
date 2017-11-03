@@ -6,17 +6,17 @@ require 'time'
 require 'logger'
 
 # Note: change this to obtain your chart data from some external source
-labels = ['FRESH - Sprint 1', 'FRESH - Sprint 2', 'FRESH - Sprint 3', 'FRESH - Sprint 4']
+labels = ['Fresh - Sprint 1', 'Fresh - Sprint 2', 'Fresh - Sprint 3', 'Fresh - Sprint 4', 'Fresh - Sprint 5']
 data = [
   {
     label: "Committed Velocity",
-    data: [0, 0, 36, 42],
+    data: [0, 0, 36, 42, ],
     backgroundColor: [ 'rgba(192, 192, 192, 0.2)' ] * labels.length,
     borderColor: [ 'rgba(192, 192, 192, 1)' ] * labels.length,
     borderWidth: 1,
   }, {
     label: "Actual Velocity",
-    data: [0, 0, 20, ],
+    data: [0, 0, 20, 36, ],
     backgroundColor: [ 'rgba(0, 255, 0, 0.2)' ] * labels.length,
     borderColor: [ 'rgba(0, 255, 0, 1)' ] * labels.length,
     borderWidth: 1,
