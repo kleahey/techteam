@@ -39,7 +39,7 @@ def authorize
   credentials
 end
 
-# SCHEDULER.every '10s', :first_in => 0 do |id|
+SCHEDULER.every '10s', :first_in => 0 do |id|
 
 # Initialize the API
 service = Google::Apis::SheetsV4::SheetsService.new
@@ -52,8 +52,8 @@ spreadsheet_id = '1M1X1vpWX33RiwvxGhfhfHhD3KHG7iRjECpCAAUiqi9U'
 range = 'Sheet1!B2:D2'
 response = service.get_spreadsheet_values(spreadsheet_id, range)
 
-# send_event('ttCapacity', { current: response.values[0][0] } )
-# send_event('freshCapacity', { current: response.values[0][1] } )
-# send_event('tpgCapacity', { current: response.values[0][2] } )
+send_event('ttCapacity', { current: response.values[0][0] } )
+send_event('freshCapacity', { current: response.values[0][1] } )
+send_event('tpgCapacity', { current: response.values[0][2] } )
 
-# end
+end
