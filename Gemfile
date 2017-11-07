@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'dashing'
 
+gem 'thin'
 gem 'puma'
 gem 'dotenv'
 gem 'httparty'
