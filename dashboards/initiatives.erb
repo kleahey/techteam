@@ -1,0 +1,23 @@
+<script type='text/javascript'>
+$(function() {
+  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+  Dashing.widget_base_dimensions = [495, 180]
+  Dashing.numColumns = 4
+});
+</script>
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+    google.load("visualization", "1", {packages:["corechart"]});
+</script>
+
+<% content_for :title do %>Products & Technology Team Dashboard<% end %>
+
+<div class="gridster">
+  <div style="font-family:'Roboto';font-weight:100;font-size:64px;">Initiatives</div>
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="4" data-sizey="6">
+      <div data-id="releaseProgress" data-view ="BarChart" data-title="Release Progress (Sprints 1 - 8)" data-moreinfo="Data reflected is as of Sprint 4 end."></div>
+    </li>
+  </ul>
+</div>
