@@ -10,14 +10,14 @@ labels = ['Transfer App (SDS)', 'Transfer App (Front End)', 'Insight', 'ADA', 'U
 
 data =  [{
         label: 'Completed',
-        data: [7, 3, 12, 7, 11, 11, 9],
+        data: [10, 7, 14, 7, 12, 11, 13],
         backgroundColor: [
           'rgba(0, 204, 0, 0.3)',
           'rgba(0, 204, 0, 0.3)',
           'rgba(0, 204, 0, 0.3)',
           'rgba(0, 204, 0, 0.3)',
           'rgba(0, 204, 0, 0.3)',
-          'rgba(0, 204, 0, 0.3)',
+          'rgba(185, 0, 0, 0.2)',
           'rgba(0, 204, 0, 0.3)'
         ],
         borderColor: [
@@ -26,14 +26,14 @@ data =  [{
           'rgba(0, 204, 0, 1.0)',
           'rgba(0, 204, 0, 1.0)',
           'rgba(0, 204, 0, 1.0)',
-          'rgba(0, 204, 0, 1.0)',
+          'rgba(230, 0, 0, 1.0)',
           'rgba(0, 204, 0, 1.0)'
         ],
         borderWidth: 1
       },
       {
         label: 'Target',
-        data: [2, 1, 0, 0, 0, 0, 0],
+        data: [4, 0, 0, 3, 1, 0, 0],
         backgroundColor: [
           'rgba(66, 244, 179, 0.1)',
           'rgba(66, 244, 179, 0.1)',
@@ -56,7 +56,7 @@ data =  [{
       },
       {
         label: 'Remaining',
-        data: [15, 6, 13, 11, 16, 14, 11],
+        data: [14, 4, 3, 11, 10, 0, 7],
         backgroundColor: [
           'rgba(255, 255, 255, 0.2)',
           'rgba(255, 255, 255, 0.2)',

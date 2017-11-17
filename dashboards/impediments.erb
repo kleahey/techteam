@@ -1,7 +1,7 @@
 <script type='text/javascript'>
 $(function() {
   // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
-  Dashing.widget_base_dimensions = [495, 180]
+  Dashing.widget_base_dimensions = [495, 122]
   Dashing.numColumns = 4
 });
 </script>
@@ -13,25 +13,34 @@ $(function() {
 
 <% content_for :title do %>Products & Technology Team Dashboard<% end %>
 <div class="gridster">
-  <div style="font-family:'Roboto';font-size:64px;font-weight:100;">Impediments</div>
+  <div style="font-family:'Roboto';font-size:64px;font-weight:100;">WebApp Hotfix: Ron Burgundy - November 27</div>
   <ul>
     <li data-row="1" data-col="1" data-sizex="4" data-sizey="1">
-      <div data-id="impediment1" style="background-color:maroon;" data-view="Text" data-title="" data-text="SDS: Large files (+5GB) not copying to S3" data-moreinfo=""></div>
+      <div data-id="impediment6" data-view="Text" data-title="" data-text="Continue Button on Review and Submit Overlay" data-moreinfo=""></div>
     </li>
     <li data-row="2" data-col="1" data-sizex="4" data-sizey="1">
-      <div data-id="impediment2" data-view="Text" data-title="" data-text="Recommender Profile Green Check Issue" data-moreinfo=""></div>
-    </li>
-    <li data-row="3" data-col="1" data-sizex="4" data-sizey="1">
-      <div data-id="impediment3" style="background-color:maroon;" data-view="Text" data-title="" data-text="Parchment, onTrack, and Member Status" data-moreinfo=""></div>
-    </li>
-    <li data-row="4" data-col="1" data-sizex="4" data-sizey="1">
-      <div data-id="impediment4" data-view="Text" data-title="" data-text="CashNet dropped pass & criss-cross apple sauce." data-moreinfo=""></div>
-    </li>
-    <li data-row="5" data-col="1" data-sizex="4" data-sizey="1">
       <div data-id="impediment5" style="background-color:maroon;" data-view="Text" data-title="" data-text="TRUSTe Complaint" data-moreinfo=""></div>
     </li>
-    <li data-row="6" data-col="1" data-sizex="4" data-sizey="1">
-      <div data-id="impediment6" data-view="Text" data-title="" data-text="Continue Button on Review and Submit Overlay" data-moreinfo=""></div>
+    <li data-row="3" data-col="1" data-sizex="4" data-sizey="1">
+      <div data-id="impediment5" data-view="Text" data-title="" data-text="Error creating millions of extra rows in DB" data-moreinfo=""></div>
+    </li>
+  </ul>
+  <div style="font-family:'Roboto';font-size:64px;font-weight:100;margin-top:30px;">Production Issues on the Radar</div>
+  <ul>
+    <li data-row="4" data-col="1" data-sizex="4" data-sizey="1">
+      <div data-id="impediment4" style="background-color:maroon;" data-view="Text" data-title="" data-text="QAS only accepting TLS 1.2 connections starting December 4" data-moreinfo=""></div>
+    </li>
+    <li data-row="5" data-col="1" data-sizex="4" data-sizey="1">
+      <div data-id="impediment1" data-view="Text" data-title="" data-text="SDS: Large files (+5GB) not copying to S3" data-moreinfo=""></div>
+    </li>
+    <li data-row="4" data-col="1" data-sizex="4" data-sizey="1">
+      <div data-id="impediment4" style="background-color:maroon;" data-view="Text" data-title="" data-text="Recommender profile green check issue" data-moreinfo=""></div>
+    </li>
+    <li data-row="7" data-col="1" data-sizex="4" data-sizey="1">
+      <div data-id="impediment3" data-view="Text" data-title="" data-text="Parchment, onTrack, and Member Status" data-moreinfo=""></div>
+    </li>
+    <li data-row="8" data-col="1" data-sizex="4" data-sizey="1">
+      <div data-id="impediment4" style="background-color:maroon;" data-view="Text" data-title="" data-text="CashNet dropped pass & criss-cross apple sauce" data-moreinfo=""></div>
     </li>
   </ul>
 </div>
